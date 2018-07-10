@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+      <mat-card class="card">
+             <div class="container">
+               <div class="item">
+               <label>User Name: </label><br>
+                <input [value]="username" (input)="username = $event.target.value" type="text" placeholder="Enter user name" id="username" name="username" class="input">
+             </div>
+            <div class="item">
+              <div class="field">
+                <label>Room: </label><br>
+                <input [value]="roomName" (input)="roomName = $event.target.value"  type="text" placeholder="Enter room name" id="roomName" name="roomName" class="input">
+              </div>
+            </div>
+             </div>
+
+              <br>
+              <br>
+              <div style="font-size: 20px">
+              <button  type="button" class="button" (click)="createRoom()">CREATE ROOM</button>
+               or
+              <button type="button"  class="button" (click)="createRoom()">JOIN ROOM</button>
+            </div>
+                
+  </mat-card>
+    
+    <!-- 
+  <h3 align="center">Remote Videos</h3>
+  <div class="container1">
+    <div class="item">
+      <img height="250" width="250" src="assets/images/image.png">
+    </div>
+    <div class="item">
+      <img height="250" width="250" src="assets/images/image.png">
+    </div>
+    <div class="item">
+      <img height="250" width="250" src="assets/images/image.png">
+    </div>
+    <div class="item">
+      <img height="250" width="250" src="assets/images/image.png">
+    </div>
+  </div> -->
+</body>
+</html>

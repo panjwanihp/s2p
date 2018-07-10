@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GAUSS | & | RIEMANN</title>
+  <style>
+    html { margin-top: 0px; }
+    #chat-content { height: 180px;  overflow-y: scroll; }
+    #downloadFile {
+  display: none;
+}
+progress {
+  width: 100%;
+}
+nav{
+  background-color: #0000FF;
+  padding: 30px;
+}
+.container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.item{
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+    <script src="systemjs.config.js"></script>
+  <nav class="fixed-top">
+    <div class="container">
+      <div class="item">       
+        <img src="assets/images/Logo.jpeg" width="100px" height="100px">
+      </div>
+      <div class="item">
+        <h1 class="ui header" style="color: #ffffff">GAUSS | & | RIEMANN</h1>
+        <h3 style="color: #ffffff">Demo on Multi-Party Conference in LOW BANDWIDTH</h3>
+      </div>
+  </div>
+  </nav>
+  <hr>
+  <div class="container">
+    <div class="item" style="padding:20px">
+      <app-room></app-room>
+    </div>
+    <div class="item">
+      <video #video height="200" width="200" autoplay muted></video>
+      <p><b> Local Video </b>/<p>
+    </div>
+ </div>
+  
+  <hr>
+  <p style="text-align: center;"><b> Remote Video </b>/<p>
+  <video #remotevideo height="200" width="200" autoplay ></video>
+  <video #remotevideo1 height="200" width="200" autoplay ></video>
+  <button #callbutton (click)="startCall()">call</button>
+</body>
+</html>
